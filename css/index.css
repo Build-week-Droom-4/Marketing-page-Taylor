@@ -138,13 +138,6 @@ html p {
 html a {
   font-size: 1.5rem;
 }
-#main {
-  margin-left: 15%;
-  margin: 0;
-  padding: 4em 0;
-  text-align: center;
-  color: #fff;
-}
 #header {
   display: flex;
   flex-direction: column;
@@ -214,4 +207,21 @@ html a {
   position: absolute;
   color: #fff;
   text-align: center;
+}
+#main #top {
+  margin-left: 15%;
+  margin: 0;
+  padding: 4em 0;
+  text-align: center;
+}
+#main #top p {
+  padding: 3%;
+  background-color: gainsboro;
+}
+#main #top a {
+  text-decoration: none;
+  color: #fff;
+  background-color: dodgerblue;
+  padding: 1%;
+  border-radius: 10px;
 }
