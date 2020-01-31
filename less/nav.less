@@ -2,82 +2,66 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: dodgerblue url("images/overlay.png");
+  background: dodgerblue;
   color: #fff;
   height: 100%;
-  left: 0;
   position: fixed;
   text-align: right;
-  top: 0;
   width: 15%;
-}
+  padding: 2% 1%;
 
-#header .top {
-  flex-grow: 1;
-}
+  .top {
+    #logo {
+      position: relative;
+      padding: 2%;
 
-#header .bottom {
-  flex-shrink: 0;
-  padding: 1.5em 0 0.75em 0;
-}
+      h1 {
+        position: relative;
+        color: #fff;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 1em;
+      }
 
-#header .bottom > :last-child {
-  margin-bottom: 0;
-}
+      p {
+        position: relative;
+        display: block;
+        color: #fff;
+      }
 
-#header .icons {
-  text-align: center;
-}
+      i {
+        font-size: 2.5rem;
+      }
+    }
 
-#header .icons a {
-  color: lightblue;
-}
+    #nav {
+      margin-top: 10%;
+      padding: 2%;
+      a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        padding: 2% 0;
+      }
+    }
+  }
 
-#header .icons a:hover {
-  color: #fff;
-}
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20%;
 
-#logo {
-  position: relative;
-  margin: 1.75em 1.5em 1.5em 1.5em;
-  min-height: 48px;
-}
+    a {
+      color: lightblue;
+    }
 
-#logo h1 {
-  position: relative;
-  color: #fff;
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 1em;
-}
-
-#logo p {
-  position: relative;
-  display: block;
-  color: #fff;
-  margin: 0.5em 0 0 0;
-}
-
-#logo i {
-  font-size: 2.5rem;
-}
-
-#nav ul li a {
-  display: block;
-  padding: 0.5em 1.5em 0.5em 1.5em;
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  border: 0;
-}
-
-#nav ul li a span {
-  position: relative;
-  display: block;
-}
-
-#nav ul li a span:before {
-  position: absolute;
-  color: #fff;
-  text-align: center;
+    a:hover {
+      color: #fff;
+    }
+  }
 }
