@@ -1,6 +1,11 @@
 body {
+  display: flex;
   background-color: lighten(dodgerblue, 30%);
   height: 100vh;
+
+  @media (max-width: 500px) {
+    flex-direction: row;
+  }
 
   #main {
     display: flex;
@@ -24,13 +29,19 @@ body {
       h1 {
         width: 100%;
         padding: 5% 0;
+        color: dodgerblue;
       }
 
-      p {
-        width: 85%;
-        padding: 5% 0;
-        border-radius: 10px;
-        background-color: gainsboro;
+      .transbox {
+        opacity: 0.3;
+
+        p {
+          width: 85%;
+          padding: 5% 0;
+          border-radius: 10px;
+          background-color: gainsboro;
+          color: dodgerblue;
+        }
       }
 
       .button {

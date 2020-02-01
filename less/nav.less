@@ -10,7 +10,17 @@
   width: 15%;
   padding: 2% 1%;
 
+  @media (max-width: 500px) {
+    flex-direction: row;
+    position: relative;
+  }
+
   .top {
+    @media (max-width: 500px) {
+      flex-direction: row;
+      position: relative;
+    }
+
     #logo {
       position: relative;
       padding: 2%;
@@ -49,6 +59,10 @@
   }
 
   .bottom {
+    @media (max-width: 500px) {
+      flex-direction: row;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,6 +72,7 @@
 
     a {
       color: gainsboro;
+      text-decoration: none;
     }
 
     a:hover {
