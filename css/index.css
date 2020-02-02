@@ -149,50 +149,104 @@ html a {
   text-align: right;
   width: 15%;
   padding: 2% 1%;
+  border: solid black;
 }
 @media (max-width: 500px) {
   #header {
     flex-direction: row;
-    position: relative;
+    width: 100%;
+    height: 10%;
+    padding: 1%;
   }
+}
+#header .top {
+  border: solid black;
+  height: 50%;
 }
 @media (max-width: 500px) {
   #header .top {
     flex-direction: row;
-    position: relative;
+    align-items: flex-start;
+    width: 80%;
   }
 }
 #header .top #logo {
-  position: relative;
   padding: 2%;
+  border: solid black;
+}
+@media (max-width: 500px) {
+  #header .top #logo {
+    align-items: flex-start;
+    width: 25%;
+    height: 10%;
+    padding: 0;
+  }
 }
 #header .top #logo h1 {
-  position: relative;
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
   line-height: 1em;
+  border: solid black;
+}
+@media (max-width: 500px) {
+  #header .top #logo h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
 }
 #header .top #logo p {
   position: relative;
   display: block;
   color: #fff;
+  border: solid black;
+}
+@media (max-width: 500px) {
+  #header .top #logo p {
+    font-size: 1.5rem;
+    text-align: left;
+    align-content: flex-start;
+  }
 }
 #header .top #logo i {
   font-size: 2.5rem;
+  border: solid black;
+}
+@media (max-width: 500px) {
+  #header .top #logo i {
+    display: none;
+  }
 }
 #header .top #nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
   margin-top: 10%;
   padding: 2%;
+  border: solid black;
+}
+@media (max-width: 500px) {
+  #header .top #nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    font-size: 1.25rem;
+  }
 }
 #header .top #nav a {
   color: #fff;
   text-decoration: none;
-  position: relative;
-  display: block;
   padding: 2% 0;
+  border: solid black;
+}
+@media (max-width: 500px) {
+  #header .top #nav a {
+    font-size: 1.25rem;
+  }
 }
 #header .bottom {
+  border: solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -202,12 +256,20 @@ html a {
 }
 @media (max-width: 500px) {
   #header .bottom {
-    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2%;
   }
 }
 #header .bottom a {
   color: gainsboro;
   text-decoration: none;
+  border: solid black;
+}
+@media (max-width: 500px) {
+  #header .bottom a {
+    font-size: 1.25rem;
+  }
 }
 #header .bottom a:hover {
   color: #fff;
@@ -231,6 +293,13 @@ body #main {
   width: 85%;
   height: 100%;
   background-size: cover;
+  border: solid black;
+}
+@media (max-width: 500px) {
+  body #main {
+    margin: 0;
+    width: 100%;
+  }
 }
 body #main #top {
   display: flex;
@@ -240,14 +309,17 @@ body #main #top {
   width: 100%;
   height: 100%;
   text-align: center;
+  border: solid black;
 }
 body #main #top h1 {
   width: 100%;
   padding: 5% 0;
   color: dodgerblue;
+  border: solid black;
 }
 body #main #top .transbox {
   opacity: 0.3;
+  border: solid black;
 }
 body #main #top .transbox p {
   width: 85%;
