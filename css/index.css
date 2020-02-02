@@ -149,7 +149,6 @@ html a {
   text-align: right;
   width: 15%;
   padding: 2% 1%;
-  border: solid black;
 }
 @media (max-width: 500px) {
   #header {
@@ -160,19 +159,18 @@ html a {
   }
 }
 #header .top {
-  border: solid black;
   height: 50%;
 }
 @media (max-width: 500px) {
   #header .top {
     flex-direction: row;
     align-items: flex-start;
-    width: 80%;
+    width: 75%;
+    height: 100%;
   }
 }
 #header .top #logo {
   padding: 2%;
-  border: solid black;
 }
 @media (max-width: 500px) {
   #header .top #logo {
@@ -187,30 +185,37 @@ html a {
   font-weight: 600;
   font-size: 3rem;
   line-height: 1em;
-  border: solid black;
 }
 @media (max-width: 500px) {
   #header .top #logo h1 {
-    font-size: 2rem;
     text-align: left;
+  }
+}
+@media (max-width: 800px) {
+  #header .top #logo h1 {
+    font-size: 2rem;
   }
 }
 #header .top #logo p {
   position: relative;
   display: block;
   color: #fff;
-  border: solid black;
 }
 @media (max-width: 500px) {
   #header .top #logo p {
-    font-size: 1.5rem;
     text-align: left;
     align-content: flex-start;
+    padding-top: 10%;
+  }
+}
+@media (max-width: 800px) {
+  #header .top #logo p {
+    font-size: 1.5rem;
+    margin-bottom: 20%;
   }
 }
 #header .top #logo i {
   font-size: 2.5rem;
-  border: solid black;
 }
 @media (max-width: 500px) {
   #header .top #logo i {
@@ -224,29 +229,29 @@ html a {
   height: 30%;
   margin-top: 10%;
   padding: 2%;
-  border: solid black;
 }
 @media (max-width: 500px) {
   #header .top #nav {
     flex-direction: row;
     justify-content: flex-end;
+    align-items: flex-end;
     margin: 0;
-    font-size: 1.25rem;
+    padding: 0;
+    height: 85%;
   }
 }
 #header .top #nav a {
   color: #fff;
   text-decoration: none;
   padding: 2% 0;
-  border: solid black;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #header .top #nav a {
     font-size: 1.25rem;
+    padding: 0 1%;
   }
 }
 #header .bottom {
-  border: solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -264,14 +269,13 @@ html a {
 #header .bottom a {
   color: gainsboro;
   text-decoration: none;
-  border: solid black;
 }
 @media (max-width: 500px) {
   #header .bottom a {
     font-size: 1.25rem;
   }
 }
-#header .bottom a:hover {
+#header .bottom a a:hover {
   color: #fff;
 }
 body {
@@ -293,7 +297,6 @@ body #main {
   width: 85%;
   height: 100%;
   background-size: cover;
-  border: solid black;
 }
 @media (max-width: 500px) {
   body #main {
@@ -309,17 +312,14 @@ body #main #top {
   width: 100%;
   height: 100%;
   text-align: center;
-  border: solid black;
 }
 body #main #top h1 {
   width: 100%;
   padding: 5% 0;
   color: dodgerblue;
-  border: solid black;
 }
 body #main #top .transbox {
   opacity: 0.3;
-  border: solid black;
 }
 body #main #top .transbox p {
   width: 85%;
