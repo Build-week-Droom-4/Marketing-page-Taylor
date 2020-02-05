@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: dodgerblue;
-  color: #fff;
+  background: @siteBlue;
+  color: @siteWhite;
   height: 100%;
   position: fixed;
   text-align: right;
@@ -45,7 +45,7 @@
           font-size: 2rem;
         }
 
-        color: #fff;
+        color: @siteWhite;
         font-weight: 600;
         font-size: 3rem;
         line-height: 1em;
@@ -62,10 +62,6 @@
           font-size: 1.5rem;
           margin-bottom: 20%;
         }
-
-        position: relative;
-        display: block;
-        color: #fff;
       }
 
       i {
@@ -100,7 +96,7 @@
           padding: 0 1%;
         }
 
-        color: #fff;
+        color: @siteWhite;
         text-decoration: none;
         padding: 2% 0;
       }
@@ -126,12 +122,12 @@
         font-size: 1.25rem;
       }
 
-      color: gainsboro;
+      color: @siteGrey;
       text-decoration: none;
+    }
 
-      a:hover {
-        color: #fff;
-      }
+    a:hover {
+      color: @siteWhite;
     }
   }
 }

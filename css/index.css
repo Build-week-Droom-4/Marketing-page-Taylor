@@ -1,3 +1,9 @@
+.mainFlexin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -196,11 +202,6 @@ html a {
     font-size: 2rem;
   }
 }
-#header .top #logo p {
-  position: relative;
-  display: block;
-  color: #fff;
-}
 @media (max-width: 500px) {
   #header .top #logo p {
     text-align: left;
@@ -275,7 +276,7 @@ html a {
     font-size: 1.25rem;
   }
 }
-#header .bottom a a:hover {
+#header .bottom a:hover {
   color: #fff;
 }
 body {
@@ -314,19 +315,21 @@ body #main #top {
   text-align: center;
 }
 body #main #top h1 {
+  margin-bottom: 30%;
   width: 100%;
   padding: 5% 0;
   color: dodgerblue;
+  border: solid;
 }
 body #main #top .transbox {
   opacity: 0.3;
 }
 body #main #top .transbox p {
-  width: 85%;
   padding: 5% 0;
   border-radius: 10px;
   background-color: gainsboro;
   color: dodgerblue;
+  border: solid;
 }
 body #main #top .button {
   text-decoration: none;
@@ -335,6 +338,10 @@ body #main #top .button {
   padding: 1%;
   border-radius: 10px;
   margin: 2% 0 5% 0;
+}
+body #main #top .button:hover {
+  color: dodgerblue;
+  background-color: #fff;
 }
 #about {
   display: flex;
