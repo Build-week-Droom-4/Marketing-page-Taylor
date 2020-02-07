@@ -42,17 +42,16 @@ body {
       }
 
       .button {
-        text-decoration: none;
-        color: @siteWhite;
-        background-color: @siteBlue;
-        padding: 1%;
-        border-radius: 10px;
-        margin: 2% 0 5% 0;
+        .buttons(none, @siteWhite, @siteBlue, 1%, 10px, 2% 0 3% 0);
       }
 
       .button:hover {
         color: @siteBlue;
         background-color: @siteWhite;
+      }
+
+      .legal {
+        padding-bottom: 1%;
       }
     }
   }
