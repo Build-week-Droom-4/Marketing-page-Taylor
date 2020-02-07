@@ -331,7 +331,7 @@ body #main #top h1 {
   color: dodgerblue;
 }
 body #main #top p {
-  width: 40%;
+  width: 40vw;
   padding: 2%;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.7);
@@ -374,7 +374,7 @@ body #main #top .legal {
   background-color: dodgerblue;
   padding: 1%;
   border-radius: 10px;
-  margin: 5%;
+  margin: 3%;
   height: 6%;
 }
 #about header .homebutton:hover {
@@ -383,8 +383,15 @@ body #main #top .legal {
 }
 #about header h1 {
   color: dodgerblue;
-  margin-top: 10%;
-  margin-right: 15%;
+  margin-top: 10vh;
+  text-align: left;
+  width: 80vw;
+}
+@media (max-width: 1000px) {
+  #about header h1 {
+    width: 60vw;
+    margin-right: 10vw;
+  }
 }
 #about section {
   display: flex;
