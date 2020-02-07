@@ -374,6 +374,10 @@ body #main #top .button:hover {
   height: 6%;
   margin-top: 5%;
 }
+#about header .homebutton:hover {
+  color: dodgerblue;
+  background-color: #fff;
+}
 #about header h1 {
   color: dodgerblue;
   margin-top: 10%;
@@ -401,4 +405,8 @@ body #main #top .button:hover {
   padding: 1%;
   border-radius: 10px;
   margin: 2% 0 5% 0;
+}
+#about section .button:hover {
+  color: dodgerblue;
+  background-color: #fff;
 }
