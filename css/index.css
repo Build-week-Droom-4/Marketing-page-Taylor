@@ -137,12 +137,19 @@ html {
 }
 html h1 {
   font-size: 5rem;
+  font-family: Gill Sans, sans-serif;
 }
 html p {
   font-size: 2rem;
 }
 html a {
   font-size: 1.5rem;
+  font-family: Gill Sans, sans-serif;
+}
+html .legal {
+  font-size: 1.5rem;
+  font-family: Gill Sans, sans-serif;
+  color: #fff;
 }
 #header {
   display: flex;
@@ -321,13 +328,11 @@ body #main #top h1 {
   color: dodgerblue;
   border: solid;
 }
-body #main #top .transbox {
-  opacity: 0.3;
-}
-body #main #top .transbox p {
-  padding: 5% 0;
+body #main #top p {
+  width: 40%;
+  padding: 2%;
   border-radius: 10px;
-  background-color: gainsboro;
+  background: rgba(255, 255, 255, 0.2);
   color: dodgerblue;
   border: solid;
 }
@@ -352,12 +357,21 @@ body #main #top .button:hover {
   height: 100%;
   text-align: center;
 }
+#about .homebutton {
+  text-decoration: none;
+  color: #fff;
+  background-color: dodgerblue;
+  padding: 1%;
+  border-radius: 10px;
+  margin-right: 85%;
+  margin-bottom: 5%;
+}
 #about h1 {
   padding: 5% 0;
   color: dodgerblue;
 }
 #about p {
-  width: 85%;
+  width: 40%;
   padding: 5% 0;
   border-radius: 10px;
   background-color: gainsboro;
