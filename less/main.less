@@ -3,12 +3,12 @@ body {
   background-color: lighten(@siteBlue, 30%);
   height: 100vh;
 
-  @media (max-width: 500px) {
+  @media @mobile {
     flex-direction: row;
   }
 
   #main {
-    @media (max-width: 500px) {
+    @media @mobile {
       margin: 0;
       width: 100%;
     }

@@ -386,6 +386,7 @@ body #main #top .legal {
   margin-top: 10vh;
   text-align: left;
   width: 80vw;
+  padding-left: 8%;
 }
 @media (max-width: 1000px) {
   #about header h1 {
