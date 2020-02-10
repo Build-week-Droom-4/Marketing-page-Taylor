@@ -284,6 +284,7 @@ html .legal {
 #header .bottom a {
   color: gainsboro;
   text-decoration: none;
+  padding: 2%;
 }
 @media (max-width: 500px) {
   #header .bottom a {
