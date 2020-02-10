@@ -371,6 +371,7 @@ body #main .button {
   padding: 1%;
   border-radius: 10px;
   margin: 2% 0 3% 0;
+  border: solid;
 }
 body #main .button:hover {
   color: dodgerblue;
@@ -401,7 +402,7 @@ body #main .legal {
   padding: 1%;
   border-radius: 10px;
   margin: 3%;
-  vertical-align: text-bottom;
+  border: solid;
 }
 #about header .homebutton:hover {
   color: dodgerblue;
@@ -449,6 +450,7 @@ body #main .legal {
   padding: 1%;
   border-radius: 10px;
   margin: 2% 0 5% 0;
+  border: solid;
 }
 #about section .button:hover {
   color: dodgerblue;
