@@ -353,15 +353,16 @@ body #main .info div p {
 }
 body #main .info div .button {
   text-decoration: none;
-  color: #fff;
-  background-color: dodgerblue;
+  color: dodgerblue;
+  background-color: #fff;
   padding: 3%;
   border-radius: 10px;
   margin: 5%;
+  border: solid;
 }
 body #main .info div .button:hover {
-  color: dodgerblue;
-  background-color: #fff;
+  color: #fff;
+  background-color: dodgerblue;
 }
 body #main .button {
   text-decoration: none;
