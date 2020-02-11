@@ -305,6 +305,7 @@ body {
   }
 }
 body #main {
+  background-image: url(../design/bizmeeting.jpg);
   display: flex;
   justify-content: center;
   flex-direction: column;
