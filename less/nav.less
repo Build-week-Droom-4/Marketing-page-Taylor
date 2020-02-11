@@ -1,4 +1,12 @@
 #header {
+  @media @mobile {
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+    position: relative;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,18 +18,11 @@
   width: 15%;
   padding: 2% 1%;
 
-  @media @mobile {
-    flex-direction: row;
-    width: 100%;
-    height: 10%;
-    padding: 1%;
-  }
-
   .top {
     @media @mobile {
       flex-direction: row;
       align-items: flex-start;
-      width: 75%;
+      width: 80%;
       height: 100%;
     }
     height: 50%;
@@ -60,7 +61,6 @@
 
         @media @tablet {
           font-size: 1.5rem;
-          margin-bottom: 20%;
         }
       }
 
@@ -78,9 +78,7 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
-        margin: 0;
-        padding: 0;
-        height: 85%;
+        margin-top: 0;
       }
 
       display: flex;
@@ -93,7 +91,7 @@
       a {
         @media @tablet {
           font-size: 1.25rem;
-          padding: 0 1%;
+          padding: 0 3%;
         }
 
         color: @siteGrey;
@@ -124,6 +122,7 @@
     a {
       @media @mobile {
         font-size: 1.25rem;
+        padding: 5% 0;
       }
 
       color: @siteGrey;

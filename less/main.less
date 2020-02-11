@@ -1,11 +1,12 @@
 body {
+  @media @mobile {
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+  }
+
   display: flex;
   background-color: lighten(@siteBlue, 30%);
-  height: 100vh;
-
-  @media @mobile {
-    flex-direction: row;
-  }
 
   #main {
     @media @mobile {
@@ -21,6 +22,10 @@ body {
     text-align: center;
 
     h1 {
+      @media @tablet {
+        margin-bottom: 0;
+      }
+
       margin-bottom: 30vh;
       width: 100%;
       padding: 5% 0;
@@ -28,11 +33,20 @@ body {
     }
 
     .info {
+      @media @tablet {
+        .mainFlexin;
+      }
+
       display: flex;
       justify-content: space-evenly;
       width: 100%;
 
       div {
+        @media @tablet {
+          margin: 5% 0;
+          width: 60%;
+        }
+
         .mainFlexin;
         justify-content: space-between;
         width: 20vw;
@@ -43,10 +57,20 @@ body {
         backdrop-filter: blur(6px);
 
         h2 {
+          @media @tablet {
+            width: 90%;
+            font-size: 2rem;
+          }
+
           padding-bottom: 3%;
         }
 
         p {
+          @media @tablet {
+            width: 85%;
+            font-size: 1.5rem;
+          }
+
           padding: 2%;
         }
 

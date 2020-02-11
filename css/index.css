@@ -173,6 +173,7 @@ html .legal {
     width: 100%;
     height: 10%;
     padding: 1%;
+    position: relative;
   }
 }
 #header .top {
@@ -182,7 +183,7 @@ html .legal {
   #header .top {
     flex-direction: row;
     align-items: flex-start;
-    width: 75%;
+    width: 80%;
     height: 100%;
   }
 }
@@ -223,7 +224,6 @@ html .legal {
 @media (max-width: 800px) {
   #header .top #logo p {
     font-size: 1.5rem;
-    margin-bottom: 20%;
   }
 }
 #header .top #logo i {
@@ -247,9 +247,7 @@ html .legal {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 0;
-    padding: 0;
-    height: 85%;
+    margin-top: 0;
   }
 }
 #header .top #nav a {
@@ -260,7 +258,7 @@ html .legal {
 @media (max-width: 800px) {
   #header .top #nav a {
     font-size: 1.25rem;
-    padding: 0 1%;
+    padding: 0 3%;
   }
 }
 #header .top #nav a:hover {
@@ -289,6 +287,7 @@ html .legal {
 @media (max-width: 500px) {
   #header .bottom a {
     font-size: 1.25rem;
+    padding: 5% 0;
   }
 }
 #header .bottom a:hover {
@@ -297,11 +296,12 @@ html .legal {
 body {
   display: flex;
   background-color: #b7dbff;
-  height: 100vh;
 }
 @media (max-width: 500px) {
   body {
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: flex-start;
   }
 }
 body #main {
@@ -327,10 +327,23 @@ body #main h1 {
   padding: 5% 0;
   color: dodgerblue;
 }
+@media (max-width: 800px) {
+  body #main h1 {
+    margin-bottom: 0;
+  }
+}
 body #main .info {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+@media (max-width: 800px) {
+  body #main .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 body #main .info div {
   display: flex;
@@ -345,11 +358,29 @@ body #main .info div {
   color: dodgerblue;
   backdrop-filter: blur(6px);
 }
+@media (max-width: 800px) {
+  body #main .info div {
+    margin: 5% 0;
+    width: 60%;
+  }
+}
 body #main .info div h2 {
   padding-bottom: 3%;
 }
+@media (max-width: 800px) {
+  body #main .info div h2 {
+    width: 90%;
+    font-size: 2rem;
+  }
+}
 body #main .info div p {
   padding: 2%;
+}
+@media (max-width: 800px) {
+  body #main .info div p {
+    width: 85%;
+    font-size: 1.5rem;
+  }
 }
 body #main .info div .button {
   text-decoration: none;
@@ -403,6 +434,8 @@ body #main .legal {
   border-radius: 10px;
   margin: 3%;
   border: solid;
+  height: 8%;
+  text-align: center;
 }
 #about header .homebutton:hover {
   color: dodgerblue;
